@@ -1,9 +1,9 @@
 const express = require('express');
+
+const productsRouters = express.Router();
 const listController = require('../controllers/listController');
 
-const app = express();
-app.use(express.json());
+productsRouters.get('/', listController.getAll);
+productsRouters.get('/:id', listController.getProductById);
 
-app.get('/products', listController.getAll);
-
-module.exports = app;
+module.exports = productsRouters;
