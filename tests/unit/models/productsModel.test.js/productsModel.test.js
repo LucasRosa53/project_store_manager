@@ -14,9 +14,7 @@ describe('Testar unidade productsModel', () => {
 
   it('testando getProductById', async () => {
     sinon.stub(connection, 'execute').resolves([productsMock]);
-    // console.log([productsMock]);
     const products = await productsModels.getProductById();
-    // console.log(products);
     expect(products).to.be.equal(productsMock[0]);
   });
 });
