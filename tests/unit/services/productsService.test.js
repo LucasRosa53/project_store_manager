@@ -14,8 +14,9 @@ describe('Testa unidade de service', () => {
 
   it('teste se busca produtos por id', async () => {
     const id = 1;
-    sinon.stub(productsModels, 'getProductById').resolves(productsMock[0]);
-    const productsId = await productsService.getProductById(id);
-    expect(productsId).to.be.equal(productsMock[0]);
+    sinon.stub(productsModels, 'getProductById').resolves(productsMock[1]);
+    const productsId = await productsService.getProductById(999);
+    expect(productsId).to.be.equal(productsMock[1]);
+    console.log(productsId);
   });
 });

@@ -101,5 +101,24 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "046e8959-6e59-4cd1-8c45-d1077a51f34b",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3001/sales",
+    "url": "http://localhost:3001/sales/2",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-05-09T18:41:59.149Z",
+    "modified": "2023-05-09T23:24:12.423Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"saleId\": 1,\n    \"date\": \"2021-09-09T04:54:29.000Z\",\n    \"productId\": 1,\n    \"quantity\": 2\n  }",
+      "form": []
+    },
+    "tests": []
   }
 ]
