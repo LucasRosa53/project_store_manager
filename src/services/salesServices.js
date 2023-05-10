@@ -10,6 +10,8 @@ const getSalesById = async (id) => {
   return salesById;
 };
 
+// A ordem dos parâmetros da seguinte função importa a ordem!!
+
 module.exports = {
   getAllSales,
   getSalesById,

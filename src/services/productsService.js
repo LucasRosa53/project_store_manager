@@ -15,8 +15,20 @@ const productRegister = async (name) => {
   return newProductRegister;
 };
 
+const updateProduct = async (name, id) => {
+  const affectedRows = await productsModels.updateProduct(name, id);
+  return affectedRows;
+};
+
+const deleteProduct = async (id) => {
+  const affectedRows = await productsModels.deleteProduct(id);
+  return affectedRows;
+};
+
 module.exports = {
   getAll,
   getProductById,
   productRegister,
+  updateProduct,
+  deleteProduct,
 };
